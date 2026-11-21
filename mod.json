@@ -1,0 +1,67 @@
+{
+    "geode": "5.11.2",
+    "gd": {
+        "android": "2.2081",
+        "win": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "myriam.auto-decorator",
+    "name": "Auto Decorator",
+    "version": "v1.2.0",
+    "developer": "Myriam",
+    "description": "Select a structure, pick one of 20 templates and it decorates it for you - different every time, fully offline.",
+    "tags": [
+        "editor",
+        "enhancement",
+        "offline"
+    ],
+    "settings": {
+        "max-objects": {
+            "type": "int",
+            "name": "Max objects per decoration",
+            "description": "The most objects one decoration can add on Light and Medium. Heavy has no limit.",
+            "default": 800,
+            "min": 100,
+            "max": 10000
+        },
+        "first-channel": {
+            "type": "int",
+            "name": "First colour channel",
+            "description": "New colour channels for templates start from this number (channels already used in your level are skipped).",
+            "default": 1,
+            "min": 1,
+            "max": 990
+        },
+        "button-x": {
+            "type": "float",
+            "name": "Deco button: move left/right",
+            "description": "Moves the Deco button in the editor if it covers something on your screen.",
+            "default": 0,
+            "min": -400,
+            "max": 100
+        },
+        "button-y": {
+            "type": "float",
+            "name": "Deco button: move up/down",
+            "description": "Moves the Deco button in the editor if it covers something on your screen.",
+            "default": 0,
+            "min": -300,
+            "max": 20
+        },
+        "objects-per-frame": {
+            "type": "int",
+            "name": "Objects placed per frame",
+            "description": "Decorations are placed a few objects at a time so your device doesn't freeze. Lower = smoother on slow tablets, higher = faster.",
+            "default": 25,
+            "min": 5,
+            "max": 300
+        },
+        "scene-bg": {
+            "type": "bool",
+            "name": "Scenes change the background colour",
+            "description": "When you use a scene, the level's background colour is changed to match it.",
+            "default": true
+        }
+    }
+}
